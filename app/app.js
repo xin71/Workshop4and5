@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 class Feed extends React.Component {
   render(){
     return (
-      <!-- Status update entry -->
       <div>
       <div className="fb-status-update-entry panel panel-default">
         <div className="panel-body">
