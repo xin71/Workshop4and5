@@ -43,7 +43,8 @@ var initialData = {
         // ID of the user that posted the status update.
        "author": 1,
        // 01/24/16 3:48PM EST, converted to Unix Time // (# of milliseconds since Jan 1 1970 UTC)
-       // https://en.wikipedia.org/wiki/Unix_time "postDate": 1453668480000,
+       // https://en.wikipedia.org/wiki/Unix_time
+        "postDate": 1453668480000,
         "location": "Austin, TX",
         "contents": "ugh."
       },
