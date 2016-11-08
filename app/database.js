@@ -27,7 +27,8 @@ var initialData = {
       "feed": 4
     }
   },
-  // The 'feedItems' collection. Contains all of the feed items on our Facebook // system.
+  // The 'feedItems' collection. Contains all of the feed items on our Facebook
+   // system.
   "feedItems": {
       "1": {
         "_id": 1,
