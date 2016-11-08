@@ -69,6 +69,7 @@ export default class FeedItem extends React.Component {
     }
 
 
+
   render() {
     var likeButtonText = "Like";
     if (this.didUserLike()) {

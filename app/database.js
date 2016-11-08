@@ -50,24 +50,27 @@ var initialData = {
         "contents": "ugh."
       },
     // List of comments on the post
-      "comments": [
-        {
-          // The author of the comment.
-          "author": 2,
-          // The contents of the comment.
-          "contents": "hope everything is ok!",
-          // The date the comment was posted.
-          // 01/24/16 22:00 EST
-          "postDate": 1453690800000
-        },
-        {
-          "author": 3,
-          "contents": "sending hugs your way",
-          "postDate": 1453690800000
-        }
-      ]
-  }
+    "comments": [
+    {
+      // The author of the comment.
+      "author": 2,
+      // The contents of the comment.
+      "contents": "hope everything is ok!",
+       // The date the comment was posted.
+       // 01/24/16 22:00 EST
+       "postDate": 1453690800000,
+       "likeCounter":[]
+     },
+     {
+       "author": 3,
+       "contents": "sending hugs your way",
+       "postDate": 1453690800000,
+       "likeCounter":[]
+     }
+   ]
+ }
 },
+
 // "feeds" collection. Feeds for each FB user.
 "feeds": {
   "4": {
