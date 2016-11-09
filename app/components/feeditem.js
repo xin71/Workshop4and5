@@ -71,9 +71,9 @@ export default class FeedItem extends React.Component {
 
 
   render() {
-    var likeButtonText = "Like";
+    var likeBtn = "Like";
     if (this.didUserLike()) {
-      likeButtonText = "Unlike";
+      likeBtn = "Unlike";
     }
     var data = this.state;
     var contents;
@@ -107,8 +107,7 @@ export default class FeedItem extends React.Component {
             <ul className="list-inline">
               <li>
                 <a href="#" onClick={(e) => this.handleLikeClick(e)}>
-                <span className="glyphicon glyphicon-thumbs-up"></span>
-                {likeButtonText} </a>
+                <span className="glyphicon glyphicon-thumbs-up"></span> {likeBtn} </a>
                 </li>
                  <li>
                 <a href="#">
@@ -137,8 +136,12 @@ export default class FeedItem extends React.Component {
                         // i is comment's index in comments array
                         return (
                           <Comment key={i}
+                          data={comment}
                           author={comment.author}
-                          postDate={comment.postDate}>
+                          postDate={comment.postDate}
+                          feedItemKey={this.state._id}
+                          commentIndex = {i}
+                          >
                           {comment.contents}
                           </Comment>
                         );
